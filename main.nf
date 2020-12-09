@@ -857,8 +857,7 @@ if (params.phylogeny) {
     set id, file("${id}.dedup.bam"), file("${id}.dedup.bam.bai") from variantcallingGVCF_ch
 
     output:
-    set id, file("${id}.raw.gvcf")
-	  file("${id}.raw.gvcf") into gvcf_files
+    file("${id}.raw.gvcf") into gvcf_files
 
 
     """
